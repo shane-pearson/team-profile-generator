@@ -1,43 +1,4 @@
-// TODO: Include packages needed for this application
-const inquirer = require('inquirer');
-const fs = require('fs');
-
-const { writeFile } = require('fs').promises;
-
-// TODO: Create an array of questions for user input
-const promptUser = () => {
-    return inquirer.prompt([
-      {
-        type: 'input',
-        name: 'name',
-        message: 'What is your name?',
-      },
-      {
-        type: 'input',
-        name: 'id',
-        message: 'What is your id?',
-      },
-      {
-        type: 'input',
-        name: 'email',
-        message: 'What is your email?',
-      },
-      {
-        type: 'input',
-        name: 'office number',
-        message: 'What is your office number?',
-      },
-      {
-        type: 'list',
-        name: 'github',
-        message: 'Enter your GitHub Username',
-        choices: ['Add an engineer', 'Add an Intern', 'Finish']
-      },
-    ]);
-  };
-
-const generateHTML = ({ name, id, email, github }) =>
-  `<!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
   <head>
       <meta charset="UTF-8">
@@ -125,16 +86,4 @@ const generateHTML = ({ name, id, email, github }) =>
                       </div>
   
   </body>
-  </html>`;
-
-const init = () => {
-    promptUser()
-      // Use writeFile method imported from fs.promises to use promises instead of
-      // a callback function
-      .then((answers) => writeFile('index.html', generateHTML(answers)))
-      .then(() => console.log('Successfully wrote to index.html'))
-      .catch((err) => console.error(err));
-  };
-  
-  init();
-  
+  </html>

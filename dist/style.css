@@ -1,0 +1,26 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #e71c18;
+    color: white;
+}
+
+.body {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    width: 75%;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
