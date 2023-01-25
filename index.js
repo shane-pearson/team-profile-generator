@@ -148,9 +148,9 @@ generateHTML = () => {
         </div>
       <div class="card-body">
           <ul class="list-group list-group-flush">
-              <li class="list-group-item">${team[i].id}</li>
-              <li class="list-group-item">${team[i].email}</li>
-              <li class="list-group-item">${team[i].specialProperty}</li>
+              <li class="list-group-item">ID: ${team[i].id}</li>
+              <li class="list-group-item">Email: ${team[i].email}</li>
+              <li class="list-group-item"> ${team[i].specialProperty}</li>
             </ul>
       </div>
       </div>
