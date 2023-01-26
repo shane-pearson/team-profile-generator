@@ -8,4 +8,4 @@ The first part of the process was reading the documentation and creating all the
 This site was a great exercise on using all the skills I have learned to bring together a dynamic website. I believe something like this is super beneficial when you have the steps down, because you can easily recreate websites with new information. 
 
 #### Credits
-I credit the good class material to help me with this project. I also used adkbcs and tutoring to fine tune a few parts. 
+I credit the good class material to help me with this project. I also used askbcs and tutoring to fine tune a few parts. 
